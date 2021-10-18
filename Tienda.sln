@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GesTienda", "GesTienda\GesTienda.csproj", "{D1B5485C-184C-4AEF-B278-149D893D1701}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GesTienda", "GesTienda\GesTienda.csproj", "{25E317C7-256D-4B9A-85A2-21D19880CA42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D1B5485C-184C-4AEF-B278-149D893D1701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D1B5485C-184C-4AEF-B278-149D893D1701}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D1B5485C-184C-4AEF-B278-149D893D1701}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D1B5485C-184C-4AEF-B278-149D893D1701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25E317C7-256D-4B9A-85A2-21D19880CA42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25E317C7-256D-4B9A-85A2-21D19880CA42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25E317C7-256D-4B9A-85A2-21D19880CA42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25E317C7-256D-4B9A-85A2-21D19880CA42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B4770682-426D-49FE-9441-18D7B5A7B27A}
+		SolutionGuid = {A04465BC-6124-4BAB-B146-F2A6D1C55A36}
 	EndGlobalSection
 EndGlobal
