@@ -7,22 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace GesTienda
-{
-
-
-    public partial class TiposVer
-    {
-
-        /// <summary>
-        /// Control lblResultado.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblResultado;
-
+namespace GesTienda {
+    
+    
+    public partial class TiposVer {
+        
         /// <summary>
         /// Control lblMensajes.
         /// </summary>
@@ -31,7 +20,7 @@ namespace GesTienda
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblMensajes;
-
+        
         /// <summary>
         /// Control SqlDataSource1.
         /// </summary>
@@ -40,7 +29,7 @@ namespace GesTienda
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-
+        
         /// <summary>
         /// Control grdTipos.
         /// </summary>

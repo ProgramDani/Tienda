@@ -4,10 +4,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="InfoContenido" runat="server">
     <div class="contenidotitulo">Tipos de productos</div>
      <br />
-     <div>
-         <asp:Label ID="lblResultado" Text="Label" runat="server"></asp:Label>
-     </div>
-     <br />
      <asp:Label ID="lblMensajes" ForeColor="red" runat="server"></asp:Label>
      <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [TIPO]"></asp:SqlDataSource>
     <asp:GridView ID="grdTipos" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IdTipo" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" HorizontalAlign="Center" PageSize="5" Width="50%">
@@ -19,7 +15,7 @@
         <EditRowStyle BackColor="#999999" />
         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
         <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-        <PagerSettings FirstPageText="Primero" LastPageImageUrl="Último" Mode="NextPreviousFirstLast" NextPageText="Siguiente" PreviousPageImageUrl="Anterior" />
+        <PagerSettings FirstPageText="Primero" Mode="NextPreviousFirstLast" NextPageText="Siguiente" PreviousPageImageUrl="Anterior" LastPageText="Último" />
         <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
         <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
         <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
