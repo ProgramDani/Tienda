@@ -6,6 +6,8 @@
     font-size: small;
     background-color: #FFFFFF;
     color: #000000;
+    padding:0;
+    border:0;
 }
 
 #cabecera {
@@ -76,7 +78,19 @@
 .verticalMitad {
     vertical-align: middle;
 }
+.float{
+    float:left;
+    margin:0 auto;
+    padding:2em;
+}
 .titulo{
     font-weight:bold;
-    margin:5px;
+    font-size:large;
+    padding:6px;
+}
+.margintop{
+    margin-top:60px;
+}
+.boton {
+    padding: 2em;
 }

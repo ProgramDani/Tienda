@@ -72,8 +72,8 @@
       <DependentUpon>Tienda.mdf</DependentUpon>
     </Content>
     <Content Include="ControlError.aspx" />
+    <Content Include="Estilos\HojaEstilo.css" />
     <Content Include="Global.asax" />
-    <Content Include="estilos\HojaEstilo.css" />
     <Content Include="PedidosPorCliente.aspx" />
     <Content Include="ProductosMantener.aspx" />
     <Content Include="ProductosPorTipoVer.aspx" />
