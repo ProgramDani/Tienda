@@ -206,11 +206,9 @@ namespace GesTienda
             strIdTipo = ddlIdTipo.SelectedItem.Value;
             string StrCadenaConexion =
             ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-            /*string StrComandoSql = "INSERT PRODUCTO " +
-            "(IdProducto,DesPro,PrePro,IdUnidad,IdTipo) VALUES (" +
-            "'" + strIdProducto + "','" + strDescripcion +
-            "'," + FnComaPorPunto(dcPrecio) +
-            ",'" + strIdUnidad + "','" + strIdTipo + "');";*/
+            string StrComandoSql = "UPDATE PRODUCTO SET IdProducto = " + strIdProducto + ",DesPro = "+
+                strDescripcion + ",PrePro = "+FnComaPorPunto(dcPrecio)+",IdUnidad = "+strIdUnidad + ",IdTipo = " + strIdTipo + "'";
+
             using (SqlConnection conexion = new SqlConnection(StrCadenaConexion))
             {
                 try
