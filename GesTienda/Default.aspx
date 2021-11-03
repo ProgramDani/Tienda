@@ -11,9 +11,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-            <div id="cabecera1">comerciodaw.com</div>
+        <div id="cabecera1">comerciodaw.com</div>
         <div id="cabecera2">TIENDA ONLINE - SHOPPING DAW</div>
-        <div class="titulo">GesTienda</div>
+        <div class="titulo1">GesTienda</div>
         <asp:Login runat="server" align="center" ID="Login1" OnAuthenticate="Login1_Authenticate">
         <LayoutTemplate>
             <table cellpadding="1" cellspacing="0" style="border-collapse:collapse;">
@@ -41,11 +41,7 @@
                                     <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" ErrorMessage="La contraseña es obligatoria." ToolTip="La contraseña es obligatoria." ValidationGroup="ctl02">*</asp:RequiredFieldValidator>
                                 </td>
                             </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <asp:CheckBox ID="RememberMe" runat="server" />
-                                </td>
-                            </tr>
+
                             <tr>
                                 <td align="center" colspan="2" style="color:Red;">
                                     <asp:Literal ID="FailureText" runat="server" EnableViewState="False"></asp:Literal>
