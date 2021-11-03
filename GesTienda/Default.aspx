@@ -1,16 +1,20 @@
-﻿<%@ Page Title="" Language="C#"  AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="GesTienda.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="GesTienda.Default" %>
+<%@ OutputCache Duration="1" VaryByParam="None" %>
 
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-      <meta charset="UTF-8">
-      <link href="./Estilos/Style.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <div id="cabecera1">comerciodaw.com</div>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="~/Estilos/Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+            <div id="cabecera1">comerciodaw.com</div>
         <div id="cabecera2">TIENDA ONLINE - SHOPPING DAW</div>
         <div class="titulo">GesTienda</div>
-        <asp:Login runat="server" align="center">
+        <asp:Login runat="server" align="center" ID="Login1" OnAuthenticate="Login1_Authenticate">
         <LayoutTemplate>
             <table cellpadding="1" cellspacing="0" style="border-collapse:collapse;">
                 <tr>
@@ -21,7 +25,7 @@
                             </tr>
                             <tr>
                                 <td align="right">
-                                    <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">Correo electrónico::</asp:Label>
+                                    <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">Correo electrónico:</asp:Label>
                                 </td>
                                 <td class="box">
                                     <asp:TextBox ID="UserName" runat="server"></asp:TextBox>
@@ -58,6 +62,7 @@
             </table>
         </LayoutTemplate>
     </asp:Login>
+        <asp:Label ID="lblMensajes" runat="server" Text="Label"></asp:Label>
         <div class="footer">
             <br />
                 <br />
@@ -65,7 +70,6 @@
                 <br />
                 IES Mare Nostrum (Alicante)
         </div>
-    </body>
+    </form>
+</body>
 </html>
-    
-

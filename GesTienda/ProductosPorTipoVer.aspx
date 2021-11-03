@@ -1,6 +1,8 @@
 ﻿
 
 <%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ProductosPorTipoVer.aspx.cs" Inherits="GesTienda.ProductosPorTipoVer" %>
+<%@ OutputCache Duration="1" VaryByParam="None" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="HojaEstilo.css" rel="stylesheet" />
 </asp:Content>
