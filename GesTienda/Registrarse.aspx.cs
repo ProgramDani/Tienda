@@ -15,8 +15,10 @@ namespace GesTienda
         {
 
         }
+       
+           
 
-        protected void btnInsertar_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
             lblMensajes.Text = "";
             if (txtPassword1.Text == txtPassword2.Text)
@@ -75,6 +77,7 @@ namespace GesTienda
             }
             else
             {
+                lblMensajes.Visible = true;
                 lblMensajes.Text = "Se ha producido un error. Valores de contraseña no coincidentes";
             }
         }

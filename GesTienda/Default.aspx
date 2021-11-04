@@ -27,7 +27,7 @@
                                 <td align="right">
                                     <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">Correo electrónico:</asp:Label>
                                 </td>
-                                <td class="box">
+                                <td class="caja">
                                     <asp:TextBox ID="UserName" runat="server"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName" ErrorMessage="El nombre de usuario es obligatorio." ToolTip="El nombre de usuario es obligatorio." ValidationGroup="ctl02">*</asp:RequiredFieldValidator>
                                 </td>
@@ -36,7 +36,7 @@
                                 <td align="right">
                                     <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">Contraseña:</asp:Label>
                                 </td>
-                                <td class="box">
+                                <td class="caja">
                                     <asp:TextBox ID="Password" runat="server" TextMode="Password"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" ErrorMessage="La contraseña es obligatoria." ToolTip="La contraseña es obligatoria." ValidationGroup="ctl02">*</asp:RequiredFieldValidator>
                                 </td>
@@ -58,6 +58,9 @@
             </table>
         </LayoutTemplate>
     </asp:Login>
+        <div class="link">
+            <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Registrarse.aspx">Registrarse</asp:LinkButton><br />
+        </div>
         <asp:Label ID="lblMensajes" runat="server" Text="Label"></asp:Label>
         <div class="footer">
             <br />
