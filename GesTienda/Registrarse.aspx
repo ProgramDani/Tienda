@@ -30,7 +30,7 @@
                         <asp:Label ID="Label2" runat="server" Text="Label">Contraseña</asp:Label>
                     </div>
                     <div class="box">
-                        <asp:TextBox ID="txtPassword1" runat="server" ControlToValidate="txtCodPre"></asp:TextBox>
+                        <asp:TextBox ID="txtPassword1" runat="server" ControlToValidate="txtCodPre" TextMode="Password"></asp:TextBox>
                     </div>
                 </div>
                   <div class="linea">
@@ -38,7 +38,7 @@
                         <asp:Label ID="Label3" runat="server" Text="Label">Correo Introduzca nuevamente la Contraseña</asp:Label>
                     </div>
                     <div class="box">
-                        <asp:TextBox ID="txtPassword2" runat="server" ControlToValidate="txtCodPre"></asp:TextBox>
+                        <asp:TextBox ID="txtPassword2" runat="server" ControlToValidate="txtCodPre" TextMode="Password"></asp:TextBox>
                     </div>
                 </div>
                   <div class="linea">
@@ -94,13 +94,11 @@
                         <asp:Button ID="Button1" runat="server" Text="Insertar" OnClick="Button1_Click" />
                     </div>
                     <div class="link">
-                    <asp:LinkButton ID="LinkButton1" runat="server">Ir a Inicio</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Default.aspx">Ir a Inicio</asp:LinkButton>
                     </div>
                 </div>
                    <asp:Label ID="lblMensajes" runat="server" Text="Label" ForeColor="Red" Visible="true"></asp:Label>
              </div>
-             
-       
         <div class="footer">
             <br />
             <br />

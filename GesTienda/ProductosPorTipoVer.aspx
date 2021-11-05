@@ -8,7 +8,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="InfoContenido" runat="server">
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [TIPO]"></asp:SqlDataSource>
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [PRODUCTO]">
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [DesTip], [IdUnidad], [PrePro], [DesPro], [IdProducto] FROM [ProductosDet] WHERE (([IdTipo] = @IdTipo) AND ([IdTipo] = @IdTipo2))">
+        <SelectParameters>
+            <asp:ControlParameter ControlID="grdTipos" Name="IdTipo" PropertyName="SelectedValue" Type="String" />
+            <asp:ControlParameter ControlID="grdTipos" Name="IdTipo2" PropertyName="SelectedValue" Type="String" />
+        </SelectParameters>
     </asp:SqlDataSource>
     <div class="center">
         <div class="titulo1">
@@ -48,7 +52,8 @@
         <Columns>
             <asp:BoundField DataField="IdProducto" HeaderText="Id Producto" ReadOnly="True" SortExpression="IdProducto" />
             <asp:BoundField DataField="DesPro" HeaderText="Descripción" SortExpression="DesPro" />
-            <asp:BoundField DataField="PrePro" HeaderText="Precio" SortExpression="PrePro" >
+            <asp:BoundField DataField="PrePro" HeaderText="Precio" SortExpression="PrePro" DataFormatString="{0:n2}" >
+            <ItemStyle HorizontalAlign="Right" />
             </asp:BoundField>
             <asp:BoundField DataField="IdUnidad" HeaderText="Unidad" SortExpression="IdUnidad" />
             <asp:BoundField DataField="IdTipo" HeaderText="Tipo" SortExpression="IdTipo" />
