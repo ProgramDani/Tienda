@@ -8,11 +8,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="InfoContenido" runat="server">
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [TIPO]"></asp:SqlDataSource>
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [DesTip], [IdUnidad], [PrePro], [DesPro], [IdProducto] FROM [ProductosDet] WHERE (([IdTipo] = @IdTipo) AND ([IdTipo] = @IdTipo2))">
-        <SelectParameters>
-            <asp:ControlParameter ControlID="grdTipos" Name="IdTipo" PropertyName="SelectedValue" Type="String" />
-            <asp:ControlParameter ControlID="grdTipos" Name="IdTipo2" PropertyName="SelectedValue" Type="String" />
-        </SelectParameters>
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [DesTip], [IdUnidad], [PrePro], [DesPro], [IdProducto] FROM [ProductosDet]">
     </asp:SqlDataSource>
     <div class="center">
         <div class="titulo1">
@@ -22,7 +18,7 @@
           <asp:Label runat="server" Text="Label">Tipos de producto</asp:Label>
         </div>
     </div>
-    <asp:GridView ID="grdTipos" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IdTipo" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" HorizontalAlign="Center" PageSize="5" ShowFooter="True" Width="50%">
+    <asp:GridView ID="grdTipos" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IdTipo" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" HorizontalAlign="Center" PageSize="5" ShowFooter="True" Width="50%" OnSelectedIndexChanged="grdTipos_SelectedIndexChanged">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
             <asp:CommandField ShowSelectButton="True" />
