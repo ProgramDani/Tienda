@@ -35,16 +35,46 @@
     </div>
     <div class="float">
         <div class="margintop">
-            <asp:Label ID="lblIdProducto" runat="server" Text="Id. Producto"></asp:Label>
-            <asp:TextBox ID="txtIdProducto" runat="server" Enabled="False"></asp:TextBox><br />
-            <asp:Label ID="lblDesPro" runat="server" Text="Descripción"></asp:Label>
-            <asp:TextBox ID="txtDesPro" runat="server" Enabled="False"></asp:TextBox><br />
-            <asp:Label ID="lblPrePro" runat="server" Text="Precio"></asp:Label>
-            <asp:TextBox ID="txtPrePro" runat="server" Text="0" Enabled="False"></asp:TextBox><br />
-            <asp:Label ID="lblIdUnidad" runat="server" Text="Unidad"></asp:Label>
-            <asp:DropDownList ID="ddlIdUnidad" runat="server" Enabled="False" DataSourceID="SqlDataSource2" DataTextField="IdUnidad" DataValueField="IdUnidad"></asp:DropDownList><br />
-            <asp:Label ID="lblIdTipo" runat="server" Text="Tipo Producto"></asp:Label>
-            <asp:DropDownList ID="ddlIdTipo" runat="server" Enabled="False" DataSourceID="SqlDataSource3" DataTextField="DesTip" DataValueField="IdTipo"></asp:DropDownList><br />
+            <div class="linea">
+                <div class="texto">
+                    <asp:Label ID="lblIdProducto" runat="server" Text="Id. Producto"></asp:Label>
+                </div>
+                <div class="box">
+                    <asp:TextBox ID="txtIdProducto" runat="server" Enabled="False"></asp:TextBox><br />
+                </div>
+            </div>
+            <div class="linea">
+                <div class="texto">
+                    <asp:Label ID="lblDesPro" runat="server" Text="Descripción"></asp:Label>
+                </div>
+                <div class="box">
+                    <asp:TextBox ID="txtDesPro" runat="server" Enabled="False"></asp:TextBox><br />
+                </div>
+            </div>
+            <div class="linea">
+                <div class="texto">
+                    <asp:Label ID="lblPrePro" runat="server" Text="Precio"></asp:Label>
+                </div>
+                <div class="box">
+                    <asp:TextBox ID="txtPrePro" runat="server" Text="0" Enabled="False"></asp:TextBox><br />
+                </div>
+            </div>
+            <div class="linea">
+                <div class="texto">
+                    <asp:Label ID="lblIdUnidad" runat="server" Text="Unidad"></asp:Label>
+                </div>
+                <div class="box">
+                    <asp:DropDownList ID="ddlIdUnidad" runat="server" Enabled="False" DataSourceID="SqlDataSource2" DataTextField="IdUnidad" DataValueField="IdUnidad"></asp:DropDownList><br />
+                </div>
+            </div>
+            <div class="linea">
+                <div class="texto">
+                    <asp:Label ID="lblIdTipo" runat="server" Text="Tipo Producto"></asp:Label>
+                </div>
+                <div class="box">
+                   <asp:DropDownList ID="ddlIdTipo" runat="server" Enabled="False" DataSourceID="SqlDataSource3" DataTextField="DesTip" DataValueField="IdTipo"></asp:DropDownList><br />
+                </div>
+            </div>
         </div>
 
         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [UNIDAD]"></asp:SqlDataSource>

@@ -14,15 +14,15 @@
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
             <asp:CommandField ShowSelectButton="True" ButtonType="Button" />
-            <asp:BoundField DataField="IdCliente" HeaderText="IdCliente" ReadOnly="True" SortExpression="IdCliente" />
-            <asp:BoundField DataField="NomCli" HeaderText="NomCli" SortExpression="NomCli" />
-            <asp:BoundField DataField="PobCli" HeaderText="PobCli" SortExpression="PobCli" />
-            <asp:BoundField DataField="CorCli" HeaderText="CorCli" SortExpression="CorCli" />
+            <asp:BoundField DataField="IdCliente" HeaderText="Id Cliente" ReadOnly="True" SortExpression="IdCliente" />
+            <asp:BoundField DataField="NomCli" HeaderText="Nombre" SortExpression="NomCli" />
+            <asp:BoundField DataField="PobCli" HeaderText="Pobación" SortExpression="PobCli" />
+            <asp:BoundField DataField="CorCli" HeaderText="Correo Electrónico" SortExpression="CorCli" />
         </Columns>
         <EditRowStyle BackColor="#999999" />
         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
         <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-        <PagerSettings FirstPageText="Primero" LastPageText="Último" NextPageText="Siguiente" PreviousPageText="Anterior" />
+        <PagerSettings FirstPageText="Primero" LastPageText="Último" NextPageText="Siguiente" PreviousPageText="Anterior" Mode="NextPreviousFirstLast" />
         <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
         <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
         <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
